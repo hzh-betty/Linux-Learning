@@ -83,7 +83,7 @@ public:
         int newfd = accept(_sockfd, (struct sockaddr *)&peer, &len);
         if (newfd < 0)
         {
-            std::cout << "accept error..." << std::endl;
+           //std::cout << "accept error..." << std::endl;
             return -1;
         }
         char ipstr[64];
